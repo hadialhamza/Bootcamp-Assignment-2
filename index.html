@@ -28,15 +28,48 @@
     </style>
 
     <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    <script
+      src="https://kit.fontawesome.com/fa6e0e581f.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
   </head>
   <body class="sora">
-    <h1>Hello World!</h1>
+    <!-- Header section start -->
+    <header class="min-h-[100vh] bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <!-- Nav bar start -->
+      <nav
+        class="container mx-auto flex items-center justify-between py-8 px-4"
+      >
+        <div class="w-full">
+          <img src="assets/logo-green.png" alt="logo" />
+        </div>
+        <div class="w-full hidden xl:block">
+          <div class="flex justify-center gap-8">
+            <a class="font-normal text-xl" href="">Product</a>
+            <a class="font-normal text-xl" href="">Services</a>
+            <a class="font-normal text-xl" href="">Contact us</a>
+          </div>
+        </div>
+        <div class="w-full hidden md:block">
+          <div class="flex justify-end items-center">
+            <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+            <i class="fa-solid fa-cart-shopping text-3xl mx-6"></i>
+            <button
+              class="md:hidden lg:block font-normal text-xl px-8 py-2 rounded-lg border border-[#179800] cursor-pointer"
+            >
+              Login
+            </button>
+            <button
+              class="md:hidden lg:block font-normal text-xl text-white px-8 py-2 rounded-lg border border-[#179800] bg-[#179800] cursor-pointer ml-3"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+        <div class="xl:hidden">
+          <i class="fa-solid fa-bars text-3xl lg:ml-4"></i>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
