@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        scroll-behavior: smooth;
+      }
       .sora {
         font-family: "Sora", sans-serif;
       }
@@ -38,16 +41,16 @@
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
       <!-- Nav bar start -->
       <nav
-        class="sticky top-0 backdrop-blur-md container mx-auto flex items-center justify-between py-8 px-4"
+        class="sticky top-0 backdrop-blur-lg container mx-auto flex items-center justify-between py-4 px-4"
       >
         <div class="w-full">
           <img src="assets/logo-green.png" alt="logo" />
         </div>
         <div class="w-full hidden xl:block">
           <div class="flex justify-center gap-8">
-            <a class="font-normal text-xl" href="">Product</a>
-            <a class="font-normal text-xl" href="">Services</a>
-            <a class="font-normal text-xl" href="">Contact us</a>
+            <a class="font-normal text-xl" href="#products">Product</a>
+            <a class="font-normal text-xl" href="#services">Services</a>
+            <a class="font-normal text-xl" href="#contact">Contact us</a>
           </div>
         </div>
         <div class="w-full hidden md:block">
@@ -100,7 +103,7 @@
     <!-- Main section start -->
     <main>
       <!-- Service section -->
-      <section class="container mx-auto px-4 mt-[140px]">
+      <section id="services" class="container mx-auto px-4 mt-[140px]">
         <h2 class="text-[#179800] text-4xl font-semibold mb-12">Service</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
@@ -143,7 +146,7 @@
       </section>
 
       <!-- Popular Product section -->
-      <section class="bg-[#EFEBE3]">
+      <section id="products" class="bg-[#EFEBE3]">
         <div class="container mx-auto px-4 mt-[140px] py-20 xl:py-[140px]">
           <h2 class="text-[#179800] text-4xl font-semibold mb-12">
             Popular Products
@@ -373,7 +376,7 @@
           <div
             class="flex justify-between items-center bg-[#102861] rounded-3xl p-4 lg:col-span-2"
           >
-            <div class="w-2/4 md:w-auto space-y-5">
+            <div class="w-1/2 md:w-auto space-y-5">
               <img src="assets/indiagate-logo.png" alt="" />
               <p
                 class="poppins bg-[#2A4D97] px-4 md:px-8 py-2 md:py-4 rounded-2xl text-white text-lg text-center md:text-2xl font-normal"
@@ -384,7 +387,7 @@
                 UP to <span class="font-bold">40% OFF</span>
               </h2>
             </div>
-            <div class="">
+            <div class="w-1/2 flex justify-center">
               <img src="assets/product-indiagate.png" alt="" />
             </div>
           </div>
@@ -425,7 +428,7 @@
           </div>
         </div>
       </section>
-      <section class="container mx-auto px-4 pb-12 lg:pb-[140px]">
+      <section id="contact" class="container mx-auto px-4 pb-12 lg:pb-[140px]">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div>
             <div>
@@ -436,32 +439,48 @@
               your furry friends
             </p>
           </div>
-          <div class="space-y-4 lg:space-y-8 lg:ml-24">
-            <a class="text-[#EFEBE3] font-normal text-xl block" href=""
+          <div class="flex flex-col gap-5 lg:items-center lg:justify-end">
+            <a class="text-[#EFEBE3] font-normal text-xl" href="#products"
               >Product</a
             >
-            <a class="text-[#EFEBE3] font-normal text-xl block" href=""
+            <a class="text-[#EFEBE3] font-normal text-xl" href="#services"
               >Services</a
             >
-            <a class="text-[#EFEBE3] font-normal text-xl block" href=""
+            <a class="text-[#EFEBE3] font-normal text-xl" href="#contact"
               >Contact us</a
             >
           </div>
           <div class="flex flex-col lg:justify-end lg:items-end">
             <div class="space-x-7">
-              <h2 class="text-[#EFEBE3] font-medium text-xl mb-6 lg:mb-8">Follow Us</h2>
-              <i
-                class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-facebook"
-              ></i>
-              <i
-                class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-instagram"
-              ></i>
-              <i
-                class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-linkedin"
-              ></i>
-              <i
-                class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-youtube"
-              ></i>
+              <h2 class="text-[#EFEBE3] font-medium text-xl mb-6 lg:mb-8">
+                Follow Us
+              </h2>
+              <a href="https://www.facebook.com/programmingHero" target="_blank"
+                ><i
+                  class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-facebook"
+                ></i
+              ></a>
+              <a
+                href="https://www.instagram.com/programminghero/?hl=en"
+                target="_blank"
+                ><i
+                  class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-instagram"
+                ></i
+              ></a>
+              <a
+                href="https://bd.linkedin.com/company/programminghero"
+                target="_blank"
+                ><i
+                  class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-linkedin"
+                ></i
+              ></a>
+              <a
+                href="https://www.youtube.com/c/ProgrammingHero"
+                target="_blank"
+                ><i
+                  class="cursor-pointer text-[#EFEBE3] font-medium text-3xl fa-brands fa-youtube"
+                ></i
+              ></a>
             </div>
           </div>
         </div>
